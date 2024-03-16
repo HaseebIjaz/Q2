@@ -1,0 +1,48 @@
+Next js
+
+1.App router is the core of Next.Js
+
+2.It handles all opearations that come between routing, mapping urls to components and pages, prefetchig code splitting, server side components 
+and all the stuff that comes in between fetching the url to rendering the page.
+
+3.At Server Side Rendering, there are 3 stages at which data is handles :
+
+a)Static Data: At the time of writing code , which is constant data, it almost never changes
+b)Prefetching: Dynamic data that can be fetched at build time ,so APIs are called at build time. It is called prefetchig. -> getStaticProps 
+c)Server Actions: There is some data for which it is more suitable to fetch during the render time. Such functions which help in calling APIs at render time are Server Actions -> getServerSideProps 
+
+4.For example you have to fill a form at runtime bases on user data so server actions and forms can go along
+
+5.Clerk,Shopify,Sanity,Supabase,payload,okta are projects which are actively giving integrations with Next js and also in form of server actions to simplify many of the complex development processes like authentication etc
+
+6.Headless Systems: Goal is to build projects so that front end and backend are loosely coupled and are independent. Frontend or the Presnetaion Layer is also called the Head. Headless means Frontend is loosely coupled
+
+7.There are two layers in frontend to handle:
+a)Presentation Layer => UI Layer/ Template
+b)Data layer =>Fetching data at client side or server side via server action or via prefetching or via static data 
+
+8.Next Js compiler:
+a)Rust Based Implementation
+b)Faster Initial Compile
+c)Faster Code updates
+d)Faster Production Builds
+
+That's how Development Experience DX is handeled.
+
+9.Caching: Caching is available at multiple levels, there are 3 mains levels for it :
+a) Data Cache => It caches API Reuqest data
+b) Route Cache => It caches Whole Route and all the stuff and page and components being served on the route
+c) Router Cache => It tries to cache all the Server Side Components Wrok Loads at client side
+
+Route cache is at the server side and Router cache is at the client side but both deal with React Server Components
+
+10. Typically loading of a page happens such that first html css are shown and then after the non-interactive ui is visible to the user
+
+Then js is sprinkeld on it to make it interactive this process is called hydratrion.
+
+It looks like as if it is a water fall process and the user experiences a n interactive user interface.
+
+Instead Nextjs provides a streaming experience, in it , the whole page isnt loaded at once but loaded component by component so that the loaded component is made interactive as soon as possible and during that instant other components are show in loading state and as soon as they are complely loaded they are replaced by the fully interactive web frontend component . This the streaming experience in Next js
+
+11. There are two types on runtime in case of NextJs:
+a)Node Js Runtime and Edge Runtime 

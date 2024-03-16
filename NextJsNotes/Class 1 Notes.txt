@@ -1,0 +1,19 @@
+Class1 Notes
+NextJs
+
+Next js
+
+Next js Project name must not be in capital letters
+
+no default classes in tailwind css for h1 h2 h3 , you have to give the class yourself
+All default classes will be removed
+
+
+There are two routers:
+Page Router
+App Router
+
+
+We use App Router mostly. Page Router is depricated
+
+@ will enable absolute imports
