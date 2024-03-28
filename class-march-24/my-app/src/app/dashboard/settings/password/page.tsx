@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>this is password settings</div>
+    <div>this is password is settings</div>
   )
 }
 
